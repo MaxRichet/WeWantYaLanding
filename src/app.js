@@ -4,6 +4,11 @@ const port = 3000;
 
 const mongoose = require('mongoose');
 
+const cors = require('cors');
+
+app.use(cors());
+
+
 mongoose.connect('mongodb://0.0.0.0:27017/emailwewantya');
 
 app.use(express.urlencoded());
