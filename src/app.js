@@ -10,8 +10,10 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 const studentemailRoute = require(`./routes/studentemailRoute`);
+const startupemailRoute = require(`./routes/startupemailRoute`);
 
 app.use('/', studentemailRoute);
+app.use('/', startupemailRoute);
 
 app.listen(port, () => {
   console.log(`Exemple app listening on port ${port}`)
