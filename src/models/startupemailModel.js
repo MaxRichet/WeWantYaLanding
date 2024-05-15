@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-let studentemailSchema = new Schema ({
+let startupemailSchema = new Schema ({
     email: {
         type: String,
         required: true,
@@ -9,4 +9,4 @@ let studentemailSchema = new Schema ({
     }
 })
 
-module.exports = mongoose.model('StudentEmail', studentemailSchema);
+module.exports = mongoose.model('StartupEmail', startupemailSchema);
