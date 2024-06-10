@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const app = express();
 const port = 3000;
 
@@ -9,7 +10,7 @@ const cors = require('cors');
 app.use(cors());
 
 
-mongoose.connect('mongodb://0.0.0.0:27017/emailwewantya');
+mongoose.connect(process.env.MONGODB_URL);
 
 app.use(express.urlencoded());
 app.use(express.json());
