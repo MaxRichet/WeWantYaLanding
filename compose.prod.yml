@@ -3,6 +3,8 @@ services:
   wewantya-mongodb:
     image: mongo:latest
     container_name: mongodb
+    networks:
+      - routing_routing
     ports:
       - "27017:27017"
     volumes:
