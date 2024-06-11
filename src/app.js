@@ -10,7 +10,8 @@ const cors = require('cors');
 app.use(cors());
 
 
-mongoose.connect(process.env.MONGODB_URL);
+// mongoose.connect(process.env.MONGODB_URL);
+mongoose.connect('mongodb://0.0.0.0:27017/emailwewantya');
 
 app.use(express.urlencoded());
 app.use(express.json());
