@@ -11,9 +11,9 @@ const EmailForm = () => {
 
     let url;
     if (emailType === 'student') {
-      url = 'http://localhost:3000/studentemailregister';
+      url = 'api.wewantya.fr/studentemailregister';
     } else if (emailType === 'startup') {
-      url = 'http://localhost:3000/startupemailregister';
+      url = 'api.wewantya.fr/startupemailregister';
     }
 
     try {
