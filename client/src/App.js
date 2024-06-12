@@ -11,7 +11,7 @@ function App(){
     <div>
       <img src={logo} alt='logo We Want Ya'></img>
       <h1>Coming Soon</h1>
-      <p className='padding'>Soyez le premier à être informé de la mise en ligne de notre site.</p>
+      <p className='padding'>Soyez le premier à être informé de la mise en ligne de notre app.</p>
       <p>Vous êtes :</p>
       <div className='size'>
         <EmailForm />
